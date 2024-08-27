@@ -10,7 +10,7 @@ namespace Parser_productStar.CoreParse.Habra
         public string[] Parse(IHtmlDocument document)
         {
             var list = new List<string>();
-            var items = document.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName.Contains("post__title_link"));
+            var items = document.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName.Contains("story__title-link"));
 
             foreach(var item in items)
             {
